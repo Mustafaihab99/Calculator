@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="master.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="view">
+        <input class="screen" type="text" placeholder="0" id="screen" />
+      </div>
+      <div class="content">
+        <div class="row">
+          <button
+            class="btn"
+            onclick="Delete()"
+            style="background-color: rgb(238, 102, 156); color: white">
+            DE
+          </button>
+          <button class="btn" onclick="factorial()">X!</button>
+          <button class="btn btns">(</button>
+          <button class="btn btns">)</button>
+          <button class="btn btns">%</button>
+          <button
+            class="btn"
+            style="background-color: rgb(23, 179, 23); color: white"
+            onclick="remove()">
+            AC
+          </button>
+        </div>
+
+        <div class="row">
+          <button class="btn" onclick="sin()">sin</button>
+          <button class="btn" onclick="pi()">π</button>
+          <button class="btn btns">7</button>
+          <button class="btn btns">8</button>
+          <button class="btn btns">9</button>
+          <button class="btn btns">÷</button>
+        </div>
+
+        <div class="row">
+          <button class="btn" onclick="cos()">cos</button>
+          <button class="btn" onclick="log()">log</button>
+          <button class="btn btns">4</button>
+          <button class="btn btns">5</button>
+          <button class="btn btns">6</button>
+          <button class="btn btns">×</button>
+        </div>
+
+        <div class="row">
+          <button class="btn" onclick="tan()">tan</button>
+          <button class="btn" onclick="sqrt()">√</button>
+          <button class="btn btns">1</button>
+          <button class="btn btns">2</button>
+          <button class="btn btns">3</button>
+          <button class="btn btns">-</button>
+        </div>
+
+        <div class="row">
+          <button class="btn" onclick="e()">e</button>
+          <button class="btn" onclick="pow()">X<sup>2</sup></button>
+          <button class="btn btns">0</button>
+          <button class="btn btns">.</button>
+          <button
+            class="btn"
+            style="background-color: rgb(126, 162, 227); color: white"
+            onclick="solve()">
+            =
+          </button>
+          <button class="btn btns">+</button>
+        </div>
+        <div class="mode">
+          <b>☼</b>
+          <div class="cont" id="butt"></div>
+          <b>☾</b>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
